@@ -1,0 +1,100 @@
+<style>
+
+/*//--------- Chart1 begins ------*/
+  .background {
+    fill: none;
+    pointer-events: all;
+  }
+
+  .feature {
+    fill: #ccc;
+    cursor: pointer;
+  }
+
+  .feature.active {
+    fill: orange;
+  }
+
+  .mesh {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+    /*#countries path{
+      fill: #99ccff;
+    }*/
+
+    h2 {
+      position: absolute;
+      top: 50px;
+      left: 100px;
+      font-size: 1.3em;
+      font-weight: 100;      
+    }
+
+    .met path{
+      fill: #900;
+      /*stroke: #282828;*/
+    }
+    .met path:hover{
+      fill: black;
+    }
+
+    .countries {
+      fill: none;
+      stroke: #fff;
+      stroke-linejoin: round;
+    }
+/*//----------Chart1 ends-------*/
+
+/*//----------Chart2 begins-----*/
+
+.line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+    }
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
+
+/*//---------Chart2 ends--------*/
+
+/*body{
+    width:1080px;
+    margin:50px auto;
+}*/
+.Linechart path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+.rectHover:hover {  fill:blue; }
+.axis {  font: 10px sans-serif; }
+.legend tr{    border-bottom:1px solid grey; }
+.legend tr:first-child{    border-top:1px solid grey; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {  display: none; }
+.legend{
+    margin-bottom:76px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
+
+</style>

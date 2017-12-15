@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+	<title>Meteorite Landings</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+<h1 align="center"> Meteorite Landings</h1>
+	<div class="container">
+		<div id="Chart1" style="float: left; width: 60%">
+			<div id="Map" style="float: left; width: 80%";>
+				<script src="Chart1/world3.js"></script>
+				<script src="Chart1/met3.js"></script>
+				<script type="text/javascript" src="Chart1/chart1.js"></script>
+			</div>
+			<div id="List" style="float: left; width: 20%";>
+    			<ul style="list-style-type:none">
+      				<li id="name"></li>
+      				<li id="id"></li>
+      				<li id="nametype"></li>
+      				<li id="class"></li>
+      				<li id="mass"></li>
+      				<li id="fall"></li>
+      				<li id="year"></li>
+    			</ul>
+  			</div>
+		</div>
+		<div id="Chart3" style="float: left; width: 40%">		
+			<h4><center>Analysing Meteorites by Fall Type</center></h4>
+			<script src="Chart3/barpiemain.js"></script>	
+			<script type="text/javascript" src="Chart3/chart3.js"></script>
+			<script>
+    			dashboard('#Chart3',bpData);
+			</script>			
+
+		</div>
+		<div id="Chart2" >			
+			<svg id="Linechart" width="1200" height="500"></svg>
+			<script type="text/javascript" src="Chart2/chart2.js"></script>
+			
+		</div>
+
+
+
+
+	</div>
+</body>
+</html>
